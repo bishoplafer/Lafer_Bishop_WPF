@@ -50,11 +50,58 @@ switch (dayNow)
         break;
 }
 
-console.log(monthNow + " " + dayNow + daySuffix + " " + yearNow);
+console.log(monthNow + " " + dayNow + daySuffix + ", " + yearNow);
 
 var loanStart = dateNow.getDate();
 var thirtyDays = dateNow.setDate(loanStart + 30);
+var yearThirtyDays = dateNow.getFullYear(loanStart + 30);
+var monthThirtyDays = months[dateNow.getMonth(loanStart + 30)];
+var dayThirtyDays = dateNow.getDate(loanStart + 30);
+switch (dayThirtyDays)
+{
+    case 1:
+    case 21:
+    case 31:
+        dayThirtySuffix = "st";
+        break;
+    case 2:
+    case 22:
+        dayThirtySuffix = "nd";
+        break;
+    case 3:
+    case 23:
+        dayThirtySuffix = "rd";
+        break;
+    default:
+        dayThirtySuffix = "th";
+        break;
+}
+console.log("30 Days from Loan Start is " + monthThirtyDays + " " + dayThirtyDays + dayThirtySuffix + ", " + yearThirtyDays);
+
 var sixtyDays = dateNow.setDate(loanStart + 60);
+var yearSixtyDays = dateNow.getFullYear(loanStart + 60);
+var monthSixtyDays = months[dateNow.getMonth(loanStart + 60)];
+var daySixtyDays = dateNow.getDate(loanStart + 60);
+switch (daySixtyDays)
+{
+    case 1:
+    case 21:
+    case 31:
+        daySixtySuffix = "st";
+        break;
+    case 2:
+    case 22:
+        daySixtySuffix = "nd";
+        break;
+    case 3:
+    case 23:
+        daySixtySuffix = "rd";
+        break;
+    default:
+        daySixtySuffix = "th";
+        break;
+}
+console.log("60 Days from Loan Start is " + monthSixtyDays + " " + daySixtyDays + daySixtySuffix + ", " + yearSixtyDays);
 
 var loanInterest = .25 * purchasePrice; // Pawn law in Florida is 25% interest every 30 days. Default loan period = 60 Days
 var pickUpPrice = purchasePrice + loanInterest; // Customers pay the original loan + 25% interest to get their items back
