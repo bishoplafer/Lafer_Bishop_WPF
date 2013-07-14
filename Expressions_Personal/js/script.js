@@ -105,6 +105,7 @@ switch (daySixtyDays) // use switch statement to get suffix for the day 60 days 
 console.log("60 Days from Loan Start is " + monthSixtyDays + " " + daySixtyDays + daySixtySuffix + ", " + yearSixtyDays);
 
 var loanPrice = parseInt(purchasePrice); // declare loanPrice and define it as parseInt(purchasePrice) (for now)
+console.log("Loan Price = $" + loanPrice); //show loanPrice
 var loanInterest = .25 * loanPrice; // Pawn law in Florida is 25% interest every 30 days. Default loan period = 60 Days
 var pickUpPrice = loanPrice + loanInterest; // Customers pay the original loan + 25% interest (per 30 days) to get their items back
 var thirtyDays = pickUpPrice; // declare thirtyDays and define it as the loanPrice + interest (one interest charge for initial 30 days)
