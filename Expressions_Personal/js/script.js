@@ -116,4 +116,4 @@ console.log("$" + thirtyDays.toFixed(2) + " to pick up in the first 30 days or $
 
 alert("The Resale Value for the " + itemMan + " " + itemMod + " is $" + resalePrice.toFixed(2));
 alert("The Purchase Price for the " + itemMan + " " + itemMod + " is $" + purchasePrice.toFixed(2));
-alert("For a loan of $" + loanPrice + "It will be $" + thirtyDays.toFixed(2) + " to pick up by " + dayThirty + "or $" + sixtyDays.toFixed(2) + " to pick up by " + daySixty + ".");
+alert("For a loan of $" + loanPrice + " on the " + itemMan + " " + itemMod + "\nIt will be $" + thirtyDays.toFixed(2) + " to pick up by " + dayThirty + ". \nOr $" + sixtyDays.toFixed(2) + " to pick up by " + daySixty + ".");
