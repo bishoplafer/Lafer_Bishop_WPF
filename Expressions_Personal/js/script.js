@@ -22,13 +22,14 @@ var purchasePrice = resalePrice / 1.68;  // determine purchasePrice
 console.log("Purchase Price = $" + purchasePrice.toFixed(2)); // show purchasePrice
 
 // Get the Date for Loan terms
+// months Array containing the names of the months to be printed later
 var months = ["January","February","March","April","May","June","July","August","September","November","December"];
 
-var dateNow = new Date();
-var yearNow = dateNow.getFullYear();
-var monthNow = months[dateNow.getMonth()];
-var dayNow = dateNow.getDate();
-var daySuffix;
+var dateNow = new Date(); // declare dateNow variable and set it equal to current date (from browser)
+var yearNow = dateNow.getFullYear(); // declare yearNow variable and set it equal to current year
+var monthNow = months[dateNow.getMonth()]; // declare monthNow variable and set it equal to current month (get name of Month using months Array)
+var dayNow = dateNow.getDate(); // declare dayNow variable and set it equal to the current Day
+var daySuffix;  // declare daySuffix variable and use a switch statement to provide different suffixes determined by the day of the month
 
 switch (dayNow)
 {
@@ -50,14 +51,14 @@ switch (dayNow)
         break;
 }
 
-console.log(monthNow + " " + dayNow + daySuffix + ", " + yearNow);
+console.log(monthNow + " " + dayNow + daySuffix + ", " + yearNow); // show me today's date
 
-var loanStart = dateNow.getDate();
-var thirtyDays = dateNow.setDate(loanStart + 30);
-var yearThirtyDays = dateNow.getFullYear(loanStart + 30);
-var monthThirtyDays = months[dateNow.getMonth(loanStart + 30)];
-var dayThirtyDays = dateNow.getDate(loanStart + 30);
-switch (dayThirtyDays)
+var loanStart = dateNow.getDate(); // declare loanStart variable and define it as today's date
+var thirtyDays = dateNow.setDate(loanStart + 30); // declare thirtyDays variable and define it as loanStart + 30 (30 days from start of loan)
+var yearThirtyDays = dateNow.getFullYear(loanStart + 30); // declare yearThirtyDays variable and define it as the year 30 days from loanStart
+var monthThirtyDays = months[dateNow.getMonth(loanStart + 30)]; // declare monthThirtyDays variable and define it as the month 30 days from loanStart (get Month name using months Array)
+var dayThirtyDays = dateNow.getDate(loanStart + 30); // declare dayThirtyDays and define it as the day 30 days from loanStart
+switch (dayThirtyDays) // use switch statement to get suffix for the day 30 days from loanStart
 {
     case 1:
     case 21:
@@ -103,10 +104,11 @@ switch (daySixtyDays)
 }
 console.log("60 Days from Loan Start is " + monthSixtyDays + " " + daySixtyDays + daySixtySuffix + ", " + yearSixtyDays);
 
-var loanInterest = .25 * purchasePrice; // Pawn law in Florida is 25% interest every 30 days. Default loan period = 60 Days
-var pickUpPrice = purchasePrice + loanInterest; // Customers pay the original loan + 25% interest to get their items back
+var loanPrice = purchasePrice;
+var loanInterest = .25 * loanPrice; // Pawn law in Florida is 25% interest every 30 days. Default loan period = 60 Days
+var pickUpPrice = loanPrice + loanInterest; // Customers pay the original loan + 25% interest (per 30 days) to get their items back
 var thirtyDays = pickUpPrice;
-var sixtyDays = purchasePrice + loanInterest * 2;
+var sixtyDays = loanPrice + loanInterest * 2;
 console.log("$" + thirtyDays.toFixed(2) + " to pick up in the first 30 days or $" + sixtyDays.toFixed(2) + " in the second 30 days.");
 
 alert("The Resale Value for the " + itemMan + " " + itemMod + " is $" + resalePrice.toFixed(2));
