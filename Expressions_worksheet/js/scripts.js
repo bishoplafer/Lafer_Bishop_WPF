@@ -35,7 +35,7 @@ var price = 650; // declare price variable and define it as 650
 var discount = 20; // declare discount variable and define it as 20
 var percentage = discount / 100; // declare percentage variable and define it as discount divided by 100
 var item = "Black iPad Mini 64GB with At&t Service"; // declare item variable and define it as iPad Mini
-var newPrice = price - price * percentage; // declare newPrice variable and define it as the original price - 20% of the original price
+var newPrice = price - price * percentage; // declare newPrice variable and define it as the original price - original price * percentage of the original price
 var tax = .07; // declare tax variable and define it as 7% (sales tax in Florida)
 var afterTax = newPrice + newPrice * tax; // declare afterTax variable and define it as newPrice plus newPrice times tax
 console.log("Your " + item + " was originally $" + price + ", but after a " + discount + "% discount, it is now $" + newPrice + " without tax, and $" + afterTax + " with tax.");
