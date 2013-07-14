@@ -79,11 +79,11 @@ switch (dayThirtyDays) // use switch statement to get suffix for the day 30 days
 }
 console.log("30 Days from Loan Start is " + monthThirtyDays + " " + dayThirtyDays + dayThirtySuffix + ", " + yearThirtyDays);
 
-var sixtyDays = dateNow.setDate(loanStart + 60);
-var yearSixtyDays = dateNow.getFullYear(loanStart + 60);
-var monthSixtyDays = months[dateNow.getMonth(loanStart + 60)];
-var daySixtyDays = dateNow.getDate(loanStart + 60);
-switch (daySixtyDays)
+var sixtyDays = dateNow.setDate(loanStart + 60);  //declare sixtyDays variable and define it as the date 60 days from loanStart
+var yearSixtyDays = dateNow.getFullYear(loanStart + 60); // declare yearSixtyDays and define it as the year 60 days from loanStart
+var monthSixtyDays = months[dateNow.getMonth(loanStart + 60)]; // declare monthSixtyDays and define it as the month 60 days from loanStart (get month name using months Array)
+var daySixtyDays = dateNow.getDate(loanStart + 60); // declare daySixtyDays and define it as the day 60 days from loanStart
+switch (daySixtyDays) // use switch statement to get suffix for the day 60 days from loanStart
 {
     case 1:
     case 21:
@@ -104,11 +104,11 @@ switch (daySixtyDays)
 }
 console.log("60 Days from Loan Start is " + monthSixtyDays + " " + daySixtyDays + daySixtySuffix + ", " + yearSixtyDays);
 
-var loanPrice = purchasePrice;
+var loanPrice = parseInt(purchasePrice); // declare loanPrice and define it as parseInt(purchasePrice) (for now)
 var loanInterest = .25 * loanPrice; // Pawn law in Florida is 25% interest every 30 days. Default loan period = 60 Days
 var pickUpPrice = loanPrice + loanInterest; // Customers pay the original loan + 25% interest (per 30 days) to get their items back
-var thirtyDays = pickUpPrice;
-var sixtyDays = loanPrice + loanInterest * 2;
+var thirtyDays = pickUpPrice; // declare thirtyDays and define it as the loanPrice + interest (one interest charge for initial 30 days)
+var sixtyDays = loanPrice + loanInterest * 2; // declare and define it as the loanPrice + two interest charges (one for first and second 30 days)
 console.log("$" + thirtyDays.toFixed(2) + " to pick up in the first 30 days or $" + sixtyDays.toFixed(2) + " in the second 30 days.");
 
 alert("The Resale Value for the " + itemMan + " " + itemMod + " is $" + resalePrice.toFixed(2));
