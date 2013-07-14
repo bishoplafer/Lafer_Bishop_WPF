@@ -77,6 +77,7 @@ switch (dayThirtyDays) // use switch statement to get suffix for the day 30 days
         dayThirtySuffix = "th";
         break;
 }
+var dayThirty = monthThirtyDays + " " + dayThirtyDays + dayThirtySuffix + ", " + yearThirtyDays;
 console.log("30 Days from Loan Start is " + monthThirtyDays + " " + dayThirtyDays + dayThirtySuffix + ", " + yearThirtyDays);
 
 var sixtyDays = dateNow.setDate(loanStart + 60);  //declare sixtyDays variable and define it as the date 60 days from loanStart
@@ -102,6 +103,7 @@ switch (daySixtyDays) // use switch statement to get suffix for the day 60 days 
         daySixtySuffix = "th";
         break;
 }
+var daySixty = monthSixtyDays + " " + daySixtyDays + daySixtySuffix + ", " + yearSixtyDays;
 console.log("60 Days from Loan Start is " + monthSixtyDays + " " + daySixtyDays + daySixtySuffix + ", " + yearSixtyDays);
 
 var loanPrice = parseInt(purchasePrice); // declare loanPrice and define it as parseInt(purchasePrice) (for now)
@@ -114,4 +116,4 @@ console.log("$" + thirtyDays.toFixed(2) + " to pick up in the first 30 days or $
 
 alert("The Resale Value for the " + itemMan + " " + itemMod + " is $" + resalePrice.toFixed(2));
 alert("The Purchase Price for the " + itemMan + " " + itemMod + " is $" + purchasePrice.toFixed(2));
-alert("$" + thirtyDays.toFixed(2) + " to pick up in the first 30 days or $" + sixtyDays.toFixed(2) + " in the second 30 days.");
+alert("For a loan of $" + loanPrice + "It will be $" + thirtyDays.toFixed(2) + " to pick up by " + dayThirty + "or $" + sixtyDays.toFixed(2) + " to pick up by " + daySixty + ".");
