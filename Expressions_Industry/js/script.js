@@ -7,7 +7,7 @@ var dpi = prompt("Please input the image dpi"); // declare dpi variable and defi
 var width = prompt("Please input the image width"); // declare width variable and define it as user input
 var height = prompt("Please input the image height"); // declare height variable and define it as user input
 
-var pixelSq = parseInt(width) * parseInt(height) / parseInt(dpi); // declare pixelSq and set it equal to the width * height / dpi
+var pixelSq = width * height / dpi; // declare pixelSq and set it equal to the width * height / dpi
 console.log("The image is " + pixelSq + " pixels squared."); // write to console how many pixelSq the image is
 
 
