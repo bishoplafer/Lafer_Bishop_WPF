@@ -27,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="127" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.0">
+            <state line="20" column="127" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.44843048">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -38,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="27" selection-start="145" selection-end="145" vertical-scroll-proportion="0.22796352">
+            <state line="10" column="27" selection-start="145" selection-end="145" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -399,19 +399,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="127" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="10" column="27" selection-start="145" selection-end="145" vertical-scroll-proportion="-6.25">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="27" selection-start="145" selection-end="145" vertical-scroll-proportion="0.22796352">
-          <folding />
+        <state line="20" column="127" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.44843048">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
