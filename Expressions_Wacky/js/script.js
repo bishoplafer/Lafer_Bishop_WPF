@@ -8,4 +8,4 @@ var pricePerGal = prompt("How much is gas per gallon at your local Gas Station?"
 var gasPurch = prompt("How much gas (in dollar amount) did you put in your vehicle?"); // declare gasPurch variable and ask user how much they spent on gas 
 
 var distance = gasPurch / pricePerGal * milesToGal; // declare distance variable and define it as gasPurch / pricePerGal * milesToGal
-console.log("Your vehicle will travel " + distance + " miles before needed to pump gas again.");
+console.log("Your vehicle will travel " + distance.toFixed(2) + " miles before needing to pump gas again.");
