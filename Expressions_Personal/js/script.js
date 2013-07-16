@@ -23,7 +23,7 @@ console.log("Purchase Price = $" + purchasePrice.toFixed(2)); // show purchasePr
 
 // Get the Date for Loan terms
 // months Array containing the names of the months to be printed later
-var months = ["January","February","March","April","May","June","July","August","September","November","December"];
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 var dateNow = new Date(); // declare dateNow variable and set it equal to current date (from browser)
 var yearNow = dateNow.getFullYear(); // declare yearNow variable and set it equal to current year
@@ -54,7 +54,7 @@ switch (dayNow)
 console.log(monthNow + " " + dayNow + daySuffix + ", " + yearNow); // show me today's date
 
 var loanStart = dateNow.getDate(); // declare loanStart variable and define it as today's date
-var thirtyDays = dateNow.setDate(loanStart + 30); // declare thirtyDays variable and define it as loanStart + 30 (30 days from start of loan)
+var dateThirtyDays = dateNow.setDate(loanStart + 30); // declare thirtyDays variable and define it as loanStart + 30 (30 days from start of loan)
 var yearThirtyDays = dateNow.getFullYear(loanStart + 30); // declare yearThirtyDays variable and define it as the year 30 days from loanStart
 var monthThirtyDays = months[dateNow.getMonth(loanStart + 30)]; // declare monthThirtyDays variable and define it as the month 30 days from loanStart (get Month name using months Array)
 var dayThirtyDays = dateNow.getDate(loanStart + 30); // declare dayThirtyDays and define it as the day 30 days from loanStart
@@ -77,12 +77,12 @@ switch (dayThirtyDays) // use switch statement to get suffix for the day 30 days
         dayThirtySuffix = "th";
         break;
 }
-var dayThirty = monthThirtyDays + " " + dayThirtyDays + dayThirtySuffix + ", " + yearThirtyDays;
+var dateThirty = monthThirtyDays + " " + dayThirtyDays + dayThirtySuffix + ", " + yearThirtyDays;
 console.log("30 Days from Loan Start is " + monthThirtyDays + " " + dayThirtyDays + dayThirtySuffix + ", " + yearThirtyDays);
 
-var sixtyDays = dateNow.setDate(loanStart + 60);  //declare sixtyDays variable and define it as the date 60 days from loanStart
+var dateSixtyDays = dateNow.setDate(loanStart + 60);  //declare sixtyDays variable and define it as the date 60 days from loanStart
 var yearSixtyDays = dateNow.getFullYear(loanStart + 60); // declare yearSixtyDays and define it as the year 60 days from loanStart
-var monthSixtyDays = months[dateNow.getMonth(loanStart + 60)]; // declare monthSixtyDays and define it as the month 60 days from loanStart (get month name using months Array)
+var monthSixtyDays = months[dateNow.getMonth(loanStart)]; // declare monthSixtyDays and define it as the month 60 days from loanStart (get month name using months Array)
 var daySixtyDays = dateNow.getDate(loanStart + 60); // declare daySixtyDays and define it as the day 60 days from loanStart
 switch (daySixtyDays) // use switch statement to get suffix for the day 60 days from loanStart
 {
@@ -103,7 +103,7 @@ switch (daySixtyDays) // use switch statement to get suffix for the day 60 days 
         daySixtySuffix = "th";
         break;
 }
-var daySixty = monthSixtyDays + " " + daySixtyDays + daySixtySuffix + ", " + yearSixtyDays;
+var dateSixty = monthSixtyDays + " " + daySixtyDays + daySixtySuffix + ", " + yearSixtyDays;
 console.log("60 Days from Loan Start is " + monthSixtyDays + " " + daySixtyDays + daySixtySuffix + ", " + yearSixtyDays);
 
 var loanPrice = parseInt(purchasePrice); // declare loanPrice and define it as parseInt(purchasePrice) (for now)
@@ -116,4 +116,4 @@ console.log("$" + thirtyDays.toFixed(2) + " to pick up in the first 30 days or $
 
 alert("The Resale Value for the " + itemMan + " " + itemMod + " is $" + resalePrice.toFixed(2));
 alert("The Purchase Price for the " + itemMan + " " + itemMod + " is $" + purchasePrice.toFixed(2));
-alert("For a loan of $" + loanPrice + " on the " + itemMan + " " + itemMod + "\nIt will be $" + thirtyDays.toFixed(2) + " to pick up by " + dayThirty + ". \nOr $" + sixtyDays.toFixed(2) + " to pick up by " + daySixty + ".");
+alert("For a loan of $" + loanPrice + " on the " + itemMan + " " + itemMod + ":\nIt will be $" + thirtyDays.toFixed(2) + " to pick up by " + dateThirty + ". \nOr $" + sixtyDays.toFixed(2) + " to pick up by " + dateSixty + ".");
