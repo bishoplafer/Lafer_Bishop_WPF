@@ -53,11 +53,12 @@ switch (dayNow)
 
 console.log(monthNow + " " + dayNow + daySuffix + ", " + yearNow); // show me today's date
 
-var loanStart = dateNow.getDate(); // declare loanStart variable and define it as today's date
-var dateThirtyDays = dateNow.setDate(loanStart + 30); // declare thirtyDays variable and define it as loanStart + 30 (30 days from start of loan)
-var yearThirtyDays = dateNow.getFullYear(loanStart + 30); // declare yearThirtyDays variable and define it as the year 30 days from loanStart
-var monthThirtyDays = months[dateNow.getMonth(loanStart + 30)]; // declare monthThirtyDays variable and define it as the month 30 days from loanStart (get Month name using months Array)
-var dayThirtyDays = dateNow.getDate(loanStart + 30); // declare dayThirtyDays and define it as the day 30 days from loanStart
+var loanStart = new Date(); // declare loanStart variable and define it as today's date
+loanStart.setDate(loanStart.getDate()+30);
+// var dateThirtyDays = loanStart.setDate(loanStart.getDate() + 30); // declare thirtyDays variable and define it as loanStart + 30 (30 days from start of loan)
+var yearThirtyDays = loanStart.getFullYear(); // declare yearThirtyDays variable and define it as the year 30 days from loanStart
+var monthThirtyDays = months[loanStart.getMonth()]; // declare monthThirtyDays variable and define it as the month 30 days from loanStart (get Month name using months Array)
+var dayThirtyDays = loanStart.getDate(); // declare dayThirtyDays and define it as the day 30 days from loanStart
 switch (dayThirtyDays) // use switch statement to get suffix for the day 30 days from loanStart
 {
     case 1:
@@ -80,10 +81,11 @@ switch (dayThirtyDays) // use switch statement to get suffix for the day 30 days
 var dateThirty = monthThirtyDays + " " + dayThirtyDays + dayThirtySuffix + ", " + yearThirtyDays;
 console.log("30 Days from Loan Start is " + monthThirtyDays + " " + dayThirtyDays + dayThirtySuffix + ", " + yearThirtyDays);
 
-var dateSixtyDays = dateNow.setDate(loanStart + 60);  //declare sixtyDays variable and define it as the date 60 days from loanStart
-var yearSixtyDays = dateNow.getFullYear(loanStart + 60); // declare yearSixtyDays and define it as the year 60 days from loanStart
-var monthSixtyDays = months[dateNow.getMonth(loanStart)]; // declare monthSixtyDays and define it as the month 60 days from loanStart (get month name using months Array)
-var daySixtyDays = dateNow.getDate(loanStart + 60); // declare daySixtyDays and define it as the day 60 days from loanStart
+var dateSixtyDays = new Date();
+dateSixtyDays.setDate(dateSixtyDays.getDate()+60);  //declare sixtyDays variable and define it as the date 60 days from loanStart
+var yearSixtyDays = dateSixtyDays.getFullYear(); // declare yearSixtyDays and define it as the year 60 days from loanStart
+var monthSixtyDays = months[dateSixtyDays.getMonth()]; // declare monthSixtyDays and define it as the month 60 days from loanStart (get month name using months Array)
+var daySixtyDays = dateSixtyDays.getDate(); // declare daySixtyDays and define it as the day 60 days from loanStart
 switch (daySixtyDays) // use switch statement to get suffix for the day 60 days from loanStart
 {
     case 1:

@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a071627-41cb-48a5-a4e7-f2520ffdfecc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Expressions_Triangle/.idea/Expressions_Triangle.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Expressions_Triangle/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Expressions_Triangle/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Expressions_Triangle/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Expressions_Triangle/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Expressions_Triangle/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Expressions_Triangle/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Expressions_Triangle/js/script.js" afterPath="$PROJECT_DIR$/../Expressions_Triangle/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <ignored path="Expressions Personal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="4a071627-41cb-48a5-a4e7-f2520ffdfecc" time="1373813816294" ignored="false" />
-    <file path="/script.js" changelist="4a071627-41cb-48a5-a4e7-f2520ffdfecc" time="1374115015555" ignored="false" />
+    <file path="/script.js" changelist="4a071627-41cb-48a5-a4e7-f2520ffdfecc" time="1374198824806" ignored="false" />
     <file path="/index.html" changelist="4a071627-41cb-48a5-a4e7-f2520ffdfecc" time="1373763464000" ignored="false" />
     <file path="$PROJECT_DIR$/../Expressions_worksheet/index.html" changelist="4a071627-41cb-48a5-a4e7-f2520ffdfecc" time="1373763464000" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +32,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="96" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.44843048">
+            <state line="73" column="62" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.4394619">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -427,7 +420,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="96" selection-start="1333" selection-end="1333" vertical-scroll-proportion="0.44843048">
+        <state line="73" column="62" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.4394619">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
