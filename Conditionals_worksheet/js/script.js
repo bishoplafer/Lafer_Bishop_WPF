@@ -20,8 +20,7 @@ var conversion = new Array(); // new array for temperature conversions
 var loopCounter; // variable loopcounter to allow me to test each element in each array
 
 // for the index(loopCounter) start at 0 and increase by 1 until index(loopCounter) = 2 do these things:
-for (loopCounter = 0; loopCounter <= 2; loopCounter++) 
-{
+for (loopCounter = 0; loopCounter <= 2; loopCounter++){
 	// if var unit at index(loopCounter) is in Fahrenheit, var conversion at index(loopCounter) is var degrees at index(loopCounter) converted to Celsius
 	if(unit[loopCounter] === "F"){
 		conversion[loopCounter] = 5 / 9 * (degrees[loopCounter] - 32);
@@ -36,4 +35,22 @@ for (loopCounter = 0; loopCounter <= 2; loopCounter++)
 	}
 }
 
-	
+// Group: 2 Multiple Results
+// Check the Login
+var userName = new Array("Bishop", "Pohsib", "The Real Slim Shady");
+var password = new Array("1234", "0000", "1234");
+var correctUserName = new Array("Bishop", "Pohsib", "User");
+var correctPassword = new Array("0000", "0000", "1234");
+var loopCounterA;
+
+for (loopCounterA = 0; loopCounterA <= 2; loopCounterA++){
+	    if(userName[loopCounterA] === correctUserName[loopCounterA] && password[loopCounterA] === correctPassword[loopCounterA]){
+		    console.log("Welcome, " + userName[loopCounterA] + "!");
+	    }else{if(userName[loopCounterA] != correctUserName[loopCounterA] || password[loopCounterA] != correctPassword[loopCounterA]){
+			    console.log("I'm sorry " + userName[loopCounter] + " was not found. Please Try again.");
+            }
+        }
+}
+
+
+
