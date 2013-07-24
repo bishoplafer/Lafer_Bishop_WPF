@@ -46,9 +46,10 @@ var loopCounterA;
 for (loopCounterA = 0; loopCounterA <= 2; loopCounterA++){
 	    if(userName[loopCounterA] === correctUserName[loopCounterA] && password[loopCounterA] === correctPassword[loopCounterA]){
 		    console.log("Welcome, " + userName[loopCounterA] + "!");
-	    }else{if(userName[loopCounterA] != correctUserName[loopCounterA] || password[loopCounterA] != correctPassword[loopCounterA]){
-			    console.log("I'm sorry " + userName[loopCounter] + " was not found. Please Try again.");
-            }
+	    }if(userName[loopCounterA] === correctUserName[loopCounterA] && password[loopCounterA] != correctPassword[loopCounterA]){
+            console.log("The Password you entered does not match our records for user: " + userName[loopCounterA]);
+        }if(userName[loopCounterA] != correctUserName[loopCounterA]){
+            console.log("I'm sorry the user: " + userName[loopCounterA] + " was not found. Please Try again.");
         }
 }
 
