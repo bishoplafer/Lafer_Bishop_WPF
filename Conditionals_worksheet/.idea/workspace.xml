@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9a74d6ee-4b06-4f6b-9209-4c26143ca234" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Associating JS/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Associating JS/.idea/workspace.xml" />
     </list>
     <ignored path="Conditionals_worksheet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/script.js" changelist="9a74d6ee-4b06-4f6b-9209-4c26143ca234" time="1374643953216" ignored="false" />
+    <file path="/script.js" changelist="9a74d6ee-4b06-4f6b-9209-4c26143ca234" time="1374760791544" ignored="false" />
     <file path="/Dummy.txt" changelist="9a74d6ee-4b06-4f6b-9209-4c26143ca234" time="1374643359158" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +30,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="120" selection-start="2586" selection-end="2586" vertical-scroll-proportion="0.6896552">
+            <state line="76" column="107" selection-start="4538" selection-end="4538" vertical-scroll-proportion="0.62068963">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -253,7 +251,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="120" selection-start="2586" selection-end="2586" vertical-scroll-proportion="0.6896552">
+        <state line="76" column="107" selection-start="4538" selection-end="4538" vertical-scroll-proportion="0.62068963">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
