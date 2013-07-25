@@ -61,5 +61,21 @@ for (loopCounterA = 0; loopCounterA <= 2; loopCounterA++){
         }
 }
 
+// Group 3: Multiple Conditions
+// Movie Ticket Price
+var age = new Array(38, 26, 5, 62);
+var time = new Array(2, 3, 5.75, 6.5);
+var moviePrice = new Array();
+var loopCounterB;
 
+for (loopCounterB = 0; loopCounterB <= 2; loopCounterB++){
+	// if customer is (under 10 or over 55) or movie time is between 3 and 5 ticket costs $7 otherwise ticket costs $12
+	if((age[loopCounterB] < 10 || age[loopCounterB] > 55) || (3 <= time[loopCounterB] <= 5)){
+		moviePrice[loopCounterB] = 7;
+		console.log("The ticket price for the customer age " + age[loopCounterB] + " is $" + moviePrice[loopCounterB] + ".");
+	}if((age[loopCounterB] > 10 || age[loopCounterB] < 55) || (time[loopCounterB] <= 3 || time[loopCoutnerB] >= 5)){
+		moviePrice[loopCounterB] = 12;
+		console.log("The ticket price for the customer age " + age[loopCounterB] + " is $" + moviePrice[loopCounterB] + ".");
+	}
+}
 
