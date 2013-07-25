@@ -37,18 +37,26 @@ for (loopCounter = 0; loopCounter <= 2; loopCounter++){
 
 // Group: 2 Multiple Results
 // Check the Login
-var userName = new Array("Bishop", "Pohsib", "The Real Slim Shady");
-var password = new Array("1234", "0000", "1234");
-var correctUserName = new Array("Bishop", "Pohsib", "User");
-var correctPassword = new Array("0000", "0000", "1234");
-var loopCounterA;
+var userName = new Array("Bishop", "Pohsib", "The Real Slim Shady"); // new array userName with 3 test Users
+var password = new Array("1234", "0000", "1234"); // new array password with 3 test sets
+var correctUserName = new Array("Bishop", "Pohsib", "User"); // new array correctUserName contains the correct test sets
+var correctPassword = new Array("0000", "0000", "1234"); // new array correctPassword contains correct passwords for test sets
+// loopsCounterA = index of Array
+var loopCounterA; // variable loopCounterA to allow me to test each element in each array
 
+// for the index(loopCounterA) start at 0 and increase by 1 until index(loopCounterA) = 2 do these things:
 for (loopCounterA = 0; loopCounterA <= 2; loopCounterA++){
+		// if userName at index === correctUserName at index and password at index === correctPassword at index do this:
 	    if(userName[loopCounterA] === correctUserName[loopCounterA] && password[loopCounterA] === correctPassword[loopCounterA]){
+	    	// Welcome the user
 		    console.log("Welcome, " + userName[loopCounterA] + "!");
+		    // if userName at index === correctUserName at index and password at index != correctPassword at index do this:
 	    }if(userName[loopCounterA] === correctUserName[loopCounterA] && password[loopCounterA] != correctPassword[loopCounterA]){
+	    	// print to console that Password at index entered does not match correctPassword on record
             console.log("The Password you entered does not match our records for user: '" + userName[loopCounterA] + "'");
+            // if userName at index != correctUserName at index do this:
         }if(userName[loopCounterA] != correctUserName[loopCounterA]){
+        	// print to console the userName does not match correctUserName on record
             console.log("I'm sorry the user: '" + userName[loopCounterA] + "' was not found. Please Try again.");
         }
 }
