@@ -10,8 +10,13 @@ var itemMod = prompt("Please input item Model"); // declare itemMod variable and
 console.log("Model = " + itemMod);
 var retailPrice = prompt("Please input New Retail Price"); // declare retailPrice variable and define it
 console.log("Retail Price = $" + retailPrice);
+var resalePrice;
+var hotList = prompt("Is item on Hot List? Please Enter Y or N","N");
+(hotList.toUpperCase() === "Y") ?  resalePrice = retailPrice * .8 : resalePrice = retailPrice * .65;
+
+
 // Determine Resale Price by multiplying retailPrice by .65 (65%)
-var resalePrice = (retailPrice) * .65; // calculate resalePrice
+//var resalePrice = (retailPrice) * .65; // calculate resalePrice
 console.log("Resale Price = $" + resalePrice.toFixed(2)); // show resalePrice rounded to 2 decimal places
 
 // Based on Resale Price determine Loan or Purchase value

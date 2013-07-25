@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a071627-41cb-48a5-a4e7-f2520ffdfecc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Conditionals_worksheet/js/script.js" afterPath="$PROJECT_DIR$/../Conditionals_worksheet/js/script.js" />
-    </list>
+    <list default="true" id="4a071627-41cb-48a5-a4e7-f2520ffdfecc" name="Default" comment="" />
     <ignored path="Expressions Personal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="4a071627-41cb-48a5-a4e7-f2520ffdfecc" time="1374643359296" ignored="false" />
