@@ -58,6 +58,10 @@ console.log("Resale Price = $" + resalePrice.toFixed(2)); // show resalePrice ro
 // I want to buy the item at a price that leaves me enough room to resell it at the resalePrice (65% retailPrice) and make at least 32% profit (of course the lower you buy it the more money you make)
 // Resale Price / 1.68 = Loan or Purchase Value
 var purchasePrice = resalePrice / 1.68;  // determine purchasePrice
+// round number to the nearest multiple of 5
+x_rounded = 5 * Math.round(purchasePrice/5);
+purchasePrice = x_rounded;
+console.log(purchasePrice + " Rounded to the nearest multiple of 5 is " + x_rounded);
 var trans = prompt("Is this a Pawn or a Buy?\nPlease type 'Pawn' or 'Buy'.","Buy");
 if(trans.toUpperCase() === "BUY"){
     console.log("Purchase Price = $" + purchasePrice.toFixed(2)); // show purchasePrice
