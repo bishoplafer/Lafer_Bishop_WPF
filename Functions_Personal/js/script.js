@@ -10,13 +10,13 @@
 // Ask the User what day the loan started on.
 
 function LoanStart(){	
-	var loanStartDay = prompt("What day did your loan start on?(0-31)","DD");
-	var loanStartMonth = prompt("What month did your loan start in?(1-12)","MM");
-	var loanStartYear = prompt("What Year did your loan start in?","YYYY");
+	var loanStartDay = parseInt(prompt("What day did your loan start on?(0-31)","DD"));
+	var loanStartMonth = parseInt(prompt("What month did your loan start in?(1-12)","MM"));
+	var loanStartYear = parseInt(prompt("What Year did your loan start in?","YYYY"));
 	var loanStart = new Date(); 
-	loanStart.setDate(parseInt(loanStartDay));
-	loanStart.setMonth(parseInt(loanStartMonth-1));
-	loanStart.setFullYear(parseInt(loanStartYear));
+	loanStart.setDate(loanStartDay);
+	loanStart.setMonth(loanStartMonth-1);
+	loanStart.setFullYear(loanStartYear);
 	return loanStart;
 }
 // Pick Up date is the current date
@@ -37,7 +37,7 @@ var InterestPeriod = function(numDays){
 }
 // determine the pickup amount for the loan based on interest modifier
 var GetOut = function(interestMod){
-	var loan = prompt("What was the amount you were loaned?","$");
+	var loan = parseInt(prompt("What was the amount you were loaned?","$"));
 	if(interestMod === 0 || interestMod === 1){
 		var interest = .25;
 	}else{if(d > 1){
@@ -45,7 +45,7 @@ var GetOut = function(interestMod){
 			}
 		}
 	console.log("Interest Rate: " + interest);
-	var pickUpAmount = parseInt(loan) + interest * parseInt(loan);
+	var pickUpAmount = loan + interest * loan;
 	return pickUpAmount;
 }
 
