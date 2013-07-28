@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a74d6ee-4b06-4f6b-9209-4c26143ca234" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Conditionals_Personal/js/script.js" afterPath="$PROJECT_DIR$/../Conditionals_Personal/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Conditionals_Industry/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Conditionals_Industry/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Conditionals_Personal/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Conditionals_Personal/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Conditionals_Wacky/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Conditionals_Wacky/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <ignored path="Conditionals_worksheet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/script.js" changelist="9a74d6ee-4b06-4f6b-9209-4c26143ca234" time="1374760791544" ignored="false" />
+    <file path="/script.js" changelist="9a74d6ee-4b06-4f6b-9209-4c26143ca234" time="1374978905976" ignored="false" />
     <file path="/Dummy.txt" changelist="9a74d6ee-4b06-4f6b-9209-4c26143ca234" time="1374977803367" ignored="false" />
     <file path="/index.html" changelist="9a74d6ee-4b06-4f6b-9209-4c26143ca234" time="1374977864208" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
+            <state line="24" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="0.7982262">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -42,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="24" selection-start="51" selection-end="51" vertical-scroll-proportion="0.14051522">
+            <state line="10" column="36" selection-start="144" selection-end="144" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -69,8 +66,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/script.js" />
       </list>
     </option>
   </component>
@@ -138,6 +135,14 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -249,19 +254,19 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="10" column="36" selection-start="144" selection-end="144" vertical-scroll-proportion="-6.25">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="51" selection-end="51" vertical-scroll-proportion="0.14051522">
-          <folding />
+        <state line="24" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="0.7982262">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
