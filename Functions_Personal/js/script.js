@@ -2,52 +2,64 @@
 // Functions_Personal
 // July 27, 2013
 
-// Collect Customer Information
-var newCustomer = function(){
-	firstName = prompt("Customer's First Name?","First Name");
-	lastName = prompt("Customer's Last Name?", "Last Name");
-	bMonth = parseInt(prompt("What month were you born in?(1-12)","MM"));
-	bDay = parseInt(prompt("What day were you born on?(1-31)","DD"));
-	bYear = parseInt(prompt("What year were you born in?","YYYY"));
-	birthDay = new Date();
-	birthDay.setDate(bDay);
-	birthDay.setMonth(bMonth);
-	birthDay.setFullYear(bYear);
-	customerBirthDay = birthDay.getMonth()+"/"+birthDay.getDate()+"/"+birthDay.getFullYear();
-	sex = prompt("Is the customer Male or Female?","M or F");
-	race = prompt("What is the Customer's Race?\n(W)White, (B)Black, (H)Hispanic, (A)Asian, (O)Other","");
-	heightFeet = prompt("How many feet tall is the customer?","");
-	heightInches = prompt("How many inches?","");
-	height = heightFeet + "'" + heightInches + '"';
-	weight = parseInt(prompt("How much does the Customer weigh?", ""));
-	phone = prompt("What is the Customer's Phone Number?", "(XXX) XXX-XXXX");
-	email = prompt("What is the Customer's Email Address?", "@");
-	address = prompt("What is the Customer's Street Address?", "");
-	city = prompt("What City?", "City");
-	state = prompt("What State?", "State");
-	zip = prompt("What is the zipcode?", "Zip");
-	customerAddress = new Array(address, city, state, zip);
-	var customer = new Array(firstName, lastName, customerBirthDay, sex, race, height, weight, phone, email, customerAddress);
-	console.log(customer);
-	return customer;
+// determine pickup amount of loan when customer comes back to get item.
+// it costs the loan plus the interest for the amount of time the item has been in pawn to get out
+// interest is 25% per 30 days
+// determine interest by number of days between loanStart date and pickUp date
+
+// Ask the User what day the loan started on.
+
+function LoanStart(){	
+	var loanStartDay = prompt("What day did your loan start on?(0-31)","DD");
+	var loanStartMonth = prompt("What month did your loan start in?(1-12)","MM");
+	var loanStartYear = prompt("What Year did your loan start in?","YYYY");
+	var loanStart = new Date(); 
+	loanStart.setDate(parseInt(loanStartDay));
+	loanStart.setMonth(parseInt(loanStartMonth-1));
+	loanStart.setFullYear(parseInt(loanStartYear));
+	return loanStart;
+}
+// Pick Up date is the current date
+function PickUp(){
+	var pickUp = new Date();
+	pickUp.getDate();
+	return pickUp;
+}
+// determine the number of days between when the loan started and the current date
+function NumDays(Pickup,LoanStart){
+	var timelapse = parseInt((Pickup - LoanStart)/86400000); // time is counted in milliseconds 86400000 is 1 day in milliseconds
+	return timelapse;
+}
+// determine the interest modifier based on number of days between loanstart and pickup
+var InterestPeriod = function(numDays){
+	var interestPeriod = parseInt(numDays/30) + 1; // parseInt just returns the integer i.e. 0.4 will return 0, also 0.6 (or just over 15 days) will return 0. the default interest period is 1 so I add 1 to the interest modifier
+	return interestPeriod;
+}
+// determine the pickup amount for the loan based on interest modifier
+var GetOut = function(interestMod){
+	var loan = prompt("What was the amount you were loaned?","$");
+	if(interestMod === 0 || interestMod === 1){
+		var interest = .25;
+	}else{if(d > 1){
+			var interest = interestMod * .25;
+			}
+		}
+	console.log("Interest Rate: " + interest);
+	var pickUpAmount = parseInt(loan) + interest * parseInt(loan);
+	return pickUpAmount;
 }
 
-a = newCustomer();
-var firstLast = a[0] + " " + a[1];
-console.log("Customer: " + firstLast);
-var customerBday = a[2];
-console.log("Born: " + customerBday);
-var customerSex = a[3];
-console.log("Sex: " + customerSex);
-var customerRace = a[4];
-console.log("Race: " + customerRace);
-var customerHeight = a[5];
-console.log("Height: " + customerHeight);
-var customerWeight = a[6];
-console.log("Weight: " + customerWeight);
-var customerPhone = a[7];
-console.log("Phone Number: " + customerPhone);
-var customerEmail = a[8];
-console.log("Email: " + customerEmail);
-var currentAddress = a[9];
-console.log("Current Address:\n" + currentAddress[0] + "\n" + currentAddress[1] + ", " + currentAddress[2] + " " + currentAddress[3]);
+a = LoanStart();
+console.log("Loan Created: " + a.toDateString());
+b = PickUp();
+console.log("Today's Date: " + b.toDateString());
+c = NumDays(b,a);
+console.log("Number of days between Loan Start Date and Pick Up Date: " + c);
+d = InterestPeriod(c);
+console.log("Interest Periods: " + d);
+e = GetOut(d);
+console.log("It will cost: $" + e + " to Pick Up the Pawn.");
+
+
+
+
