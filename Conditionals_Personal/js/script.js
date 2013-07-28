@@ -63,7 +63,11 @@ x_rounded = 5 * Math.round(purchasePrice/5);
 console.log(purchasePrice + " Rounded to the nearest multiple of 5 is " + x_rounded);
 purchasePrice = x_rounded;
 var trans = prompt("Is this a Pawn or a Buy?\nPlease type 'Pawn' or 'Buy'.","Buy");
-if(trans.toUpperCase() === "BUY"){
+if(trans.toUpperCase() != "PAWN" && trans.toUpperCase() != "BUY"){
+    alert("I'm sorry " + trans + " was not recognized.");
+    trans = prompt("Please type 'Pawn' or 'Buy'","Buy");
+
+}else if(trans.toUpperCase() === "BUY"){
     console.log("Purchase Price = $" + purchasePrice.toFixed(2)); // show purchasePrice
     alert("The Purchase Price for the " + itemMan + " " + itemMod + " is $" + purchasePrice.toFixed(2));
 }else if(trans.toUpperCase() === "PAWN"){
