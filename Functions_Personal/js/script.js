@@ -10,8 +10,8 @@
 // Ask the User what day the loan started on.
 
 function LoanStart(){	
-	var loanStartDay = parseInt(prompt("What day did your loan start on?(0-31)","DD"));
 	var loanStartMonth = parseInt(prompt("What month did your loan start in?(1-12)","MM"));
+	var loanStartDay = parseInt(prompt("What day did your loan start on?(0-31)","DD"));
 	var loanStartYear = parseInt(prompt("What Year did your loan start in?","YYYY"));
 	var loanStart = new Date(); 
 	loanStart.setDate(loanStartDay);
@@ -40,7 +40,7 @@ var GetOut = function(interestMod){
 	var loan = parseInt(prompt("What was the amount you were loaned?","$"));
 	if(interestMod === 0 || interestMod === 1){
 		var interest = .25;
-	}else{if(d > 1){
+	}else{if(interestMod > 1){
 			var interest = interestMod * .25;
 			}
 		}
